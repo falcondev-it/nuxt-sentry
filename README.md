@@ -8,12 +8,13 @@
 Nuxt 3 module for Sentry.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/@falcondev-it/nuxt-sentry?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/@falcondev-it/nuxt-sentry?file=playground%2Fapp.vue) -->
+  <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
+
 - ⛰ &nbsp;Foo
 - 🚠 &nbsp;Bar
 - 🌲 &nbsp;Baz
@@ -37,9 +38,7 @@ npm install --save-dev @falcondev-it/nuxt-sentry
 
 ```js
 export default defineNuxtConfig({
-  modules: [
-    '@falcondev-it/nuxt-sentry'
-  ]
+  modules: ['@falcondev-it/nuxt-sentry'],
 })
 ```
 
@@ -72,14 +71,12 @@ npm run release
 ```
 
 <!-- Badges -->
+
 [npm-version-src]: https://img.shields.io/npm/v/@falcondev-it/nuxt-sentry/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://npmjs.com/package/@falcondev-it/nuxt-sentry
-
 [npm-downloads-src]: https://img.shields.io/npm/dm/@falcondev-it/nuxt-sentry.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-downloads-href]: https://npmjs.com/package/@falcondev-it/nuxt-sentry
-
 [license-src]: https://img.shields.io/npm/l/@falcondev-it/nuxt-sentry.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://npmjs.com/package/@falcondev-it/nuxt-sentry
-
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
