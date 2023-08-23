@@ -1,4 +1,5 @@
 import { captureException, init, withScope } from '@sentry/vue'
+import { defineNuxtPlugin } from 'nuxt/app'
 
 export default defineNuxtPlugin({
   enforce: 'pre',

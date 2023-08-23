@@ -1,4 +1,4 @@
-import { type NuxtApp } from '#app/nuxt'
+import { type NuxtApp } from 'nuxt/app'
 import { type SentryVitePluginOptions, sentryVitePlugin } from '@sentry/vite-plugin'
 import { type Options as SentryVueOptions } from '@sentry/vue/types/types'
 import defu from 'defu'
@@ -9,7 +9,7 @@ import {
   defineNuxtModule,
   resolvePath,
   useLogger,
-} from 'nuxt/kit'
+} from '@nuxt/kit'
 import { type Plugin } from 'vite'
 
 export interface ModuleOptions {
@@ -65,7 +65,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     const resolver = createResolver(import.meta.url)
 
-    const appConfigFile = await resolvePath(resolver.resolve('./runtime/app.config.ts'))
+    const appConfigFile = await resolvePath(resolver.resolve('./runtime/app.config'))
     nuxt.hook('app:resolve', (app) => {
       app.configs.push(appConfigFile)
     })
@@ -83,6 +83,6 @@ export default defineNuxtModule<ModuleOptions>({
 
     addVitePlugin(() => sentryVitePlugin(defu(moduleOptions.vitePlugin, defaults)) as Plugin)
 
-    addPlugin(resolver.resolve('./runtime/sentry.client.ts'))
+    addPlugin(resolver.resolve('./runtime/sentry.client'))
   },
 })

@@ -28,7 +28,10 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.6.5"
+    "@nuxt/kit": "^3.6.5",
+    "@sentry/vite-plugin": "^2.7.0",
+    "@sentry/vue": "^7.64.0",
+    "defu": "^6.1.2"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

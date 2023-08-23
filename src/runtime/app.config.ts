@@ -1,4 +1,5 @@
 import { BrowserTracing, Replay, vueRouterInstrumentation } from '@sentry/vue'
+import { defineAppConfig } from 'nuxt/app'
 
 export default defineAppConfig({
   sentry: {
