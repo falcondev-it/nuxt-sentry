@@ -4,7 +4,7 @@ import { defineNuxtPlugin } from 'nuxt/app'
 export default defineNuxtPlugin({
   enforce: 'pre',
   setup(nuxt) {
-    if (!process.dev) return
+    if (process.dev) return
 
     const dsn = useRuntimeConfig().public.sentry?.dsn
     const { client } = useAppConfig().sentry
